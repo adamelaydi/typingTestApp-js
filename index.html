@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adam | speed test</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Revalia&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="assets/images/logo-large.svg" alt="this not found">
+            <div class="personal-best">
+                <img src="assets/images/icon-personal-best.svg" alt="this not found">
+                <span class="title">personal best:</span>
+                <span class="score"> 85 </span>
+                <span class="unit">WPM</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="start-overlay">
+            <button>Start Typing Test</button>
+            <p>Or click the text and start typing</p>
+        </div>
+        <div class="container">
+            <section class="bar">
+                <button>Statistics</button>
+                <section class="information">
+                    <p class="speed">
+                        <span class="title">wpm : </span>
+                        <span class="score">0</span>
+                    </p>
+                    <p class="accuracy">
+                        <span class="title">acurracy : </span>
+                        <span class="score">00%<span>%</span></span>
+                        
+                    </p>
+                    <p class="time">
+                        <span class="title">time :</span>
+                        <span class="score">0:60</span>
+                    </p>
+                </section>
+                <section class="custom">
+                    <div class="difficulty">
+                        <p class="title">difficulty:</p>
+                        <ul>
+                            <li><input type="radio" name="diff" id="ea"><label for="ea">easy</label></li>
+                            <li><input type="radio" name="diff" id="me"><label for="me">medium</label></li>
+                            <li class="active"><input type="radio" name="diff" id="ha"><label for="ha">hard</label></li>
+                        </ul>
+                    </div>
+                    <div class="mode">
+                        <p class="title">mode:</p>
+                        <ul>
+                            <li class="active"><input type="radio" name="mod" id="ti"><label for="ti">timed(60s)</label></li>
+                            <li><input type="radio" name="mod" id="pa"><label for="pa">passage</label></li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+            <section class="passage" id="psg">d</section>
+            <button class="restart">restart test <img src="assets/images/icon-restart.svg" alt="this not found"></button>
+        </div>
+        <div class="normal">
+            <div class="container">
+                <img src="assets/images/icon-completed.svg" alt="">
+                <h2>Test Completed!</h2>
+                <p>Solid run.keep pushing to beat your high score.</p>
+                <div class="info">
+                    <div class="word">
+                        <span>WPM:</span>
+                        <span class="score">50</span>
+                    </div>
+                    <div class="accuracy">
+                        <span>Accuracy:</span>
+                        <span class="score">25%</span>
+                    </div>
+                    <div class="charachters">
+                        <span>charachters:</span>
+                        <span class="score">120/5</span>
+                    </div>
+                </div>
+                <button>Go again <img src="assets/images/icon-restart.svg" alt=""></button>
+            </div>
+        </div>
+        <div class="best">
+            <div class="container">
+                <img src="assets/images/icon-new-pb.svg" alt="">
+                <h2>high score smashed!</h2>
+                <p>you're getting faster.that was incredible typing.</p>
+                <div class="info">
+                    <div class="word">
+                        <span>WPM:</span>
+                        <span class="score">50</span>
+                    </div>
+                    <div class="accuracy">
+                        <span>Accuracy:</span>
+                        <span class="score">25%</span>
+                    </div>
+                    <div class="charachters">
+                        <span>charachters:</span>
+                        <span class="score">120/5</span>
+                    </div>
+                </div>
+                <button>beat this score <img src="assets/images/icon-restart.svg" alt=""></button>
+                <img src="assets/images/pattern-confetti.svg" alt="">
+            </div>
+        </div>
+        <div class="first">
+            <div class="container">
+                <img src="assets/images/icon-completed.svg" alt="">
+                <h2>baseline established!</h2>
+                <p>You've set the bar.now the real challenge begins_time to beat it.</p>
+                <div class="info">
+                    <div class="word">
+                        <span>WPM:</span>
+                        <span class="score">50</span>
+                    </div>
+                    <div class="accuracy">
+                        <span>Accuracy:</span>
+                        <span class="score">25%</span>
+                    </div>
+                    <div class="charachters">
+                        <span>charachters:</span>
+                        <span class="score">120/5</span>
+                    </div>
+                </div>
+                <button>beat this score <img src="assets/images/icon-restart.svg" alt=""></button>
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/main.js" type="module" ></script>
+</body>
+</html>
